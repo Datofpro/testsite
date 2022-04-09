@@ -279,11 +279,12 @@ section {
 }
 
 .insta-links {
+    
     display: flex;
-    /* flex-direction: row; */
+    flex-flow: row wrap;
     height: min-content;
-    width:min-content;
-    justify-content: space-between;
+    width: auto;
+    justify-content: center;
     align-items: center;
 }
 
