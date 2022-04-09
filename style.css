@@ -11,11 +11,12 @@
 }
 
 html {
-    /* scroll-behavior:smooth; */
+    scroll-behavior:smooth;
     /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     user-select: none;
     scrollbar-width: none;
+    background: black;
 }
 
 ::-webkit-scrollbar {
@@ -191,13 +192,14 @@ nav {
 
 section {
     justify-content: center;
-    color: white;
+    background: white;
 }
 
 /* ////////////////////////////////////////////PREMIERE SECTION////////////////////////// */
 
 .one {
     height: 100vh;
+    width: 100vw;
     background: url('img/DSCF7647_DxO-4.jpg');
     background-size: cover;
     background-position: center;
@@ -263,10 +265,12 @@ section {
 
 .four {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
     background: rgb(5, 5, 5);
+    color: white;
     justify-content:space-between;
     align-items:center;
     padding: 3%;
@@ -276,9 +280,9 @@ section {
 
 .insta-links {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     height: min-content;
-    width: 35%;
+    width:min-content;
     justify-content: space-between;
     align-items: center;
 }
@@ -289,6 +293,7 @@ section {
     width: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-left: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,23 +304,24 @@ section {
     text-decoration: none;
 }
 
+.insta-links button {
+    transition: transform 0.5s;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.insta-links button:hover {
+    transform: scale(1.1);
+}
+
 form {
     background-color: white;
     padding: 15px 30px 30px 30px;
     border-radius: 7px;
     color: black;
     width: 50%;
-    /* height: 50%; */
-}
-
-.cadre {
-    width: 75%;
-    text-align: justify;
-}
-
-.cadre .separation {
-    background-color: white;
-    height: 5px;
+    height: 50%;
 }
 
 form h1 {
@@ -323,21 +329,30 @@ form h1 {
     
 }
 
-form .corps-formulaire {
+.corps-formulaire {
     display: flex;
-    /* flex-wrap: wrap; */
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 62%;
 }
 
-form .corps-formulaire .groupe {
+.groupe {
     position: relative;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     
 }
+.gauche {
+    flex: 2;
+}
 
-form .corps-formulaire .gauche .groupe input {
+.droite {
+    margin-left: 40px;
+    flex: 4;
+}
+
+.gauche .groupe input {
     margin-top: 5px;
     padding: 10px 5px 10px 30px;
     border: 1px solid #c9c9c9;
@@ -345,7 +360,7 @@ form .corps-formulaire .gauche .groupe input {
     border-radius: 5px;
 }
 
-form .corps-formulaire .gauche .groupe i {
+.gauche .groupe i {
     position: absolute;
     left: 0;
     top: 28px;
@@ -353,16 +368,11 @@ form .corps-formulaire .gauche .groupe i {
     color: rgb(166, 57, 216);
 }
 
-form .corps-formulaire .droite {
-    margin-left: 40px;
-
-}
-
-form .corps-formulaire .droite .groupe {
+.droite .groupe {
     height: 100%;
 }
 
-form .corps-formulaire .droite .groupe textarea {
+.droite .groupe textarea {
     margin-top: 5px;
     padding: 10px;
     background-color: #f8f8f8;
@@ -370,12 +380,11 @@ form .corps-formulaire .droite .groupe textarea {
     outline: none;
     border-radius: 5px;
     resize: none;
-    height: 72%;
-    /* width: 100%; */
+    height: 100%;
 }
 
-form .pied-formulaire button {
-    margin-top: 10px;
+.pied-formulaire button {
+    margin-top: 50px;
     background-color: rgb(166, 57, 216);
     color: white;
     font-size: 15px;
@@ -387,7 +396,7 @@ form .pied-formulaire button {
     transition: transform 0.5s;
 }
 
-form .pied-formulaire button:hover {
+.pied-formulaire button:hover {
     transform: scale(1.05);
 }
 
@@ -398,30 +407,6 @@ form .pied-formulaire button:hover {
     html {
         scroll-snap-type: none;
     }
-
-    /* .nav {
-        flex-direction: column;
-    }
-
-    .nav li {
-        margin-right: 0;
-    }
-
-    .dropdown-links {
-        flex-direction: column;
-    }
-
-    .nav .insta {
-        margin-right: 0;
-    }
-
-    .nav .art {
-        margin-top: 20px;
-    }
-
-    .nav .pro {
-        margin-top: 20px;
-    } */
 
     .side {
         flex: 0;
@@ -448,54 +433,60 @@ form .pied-formulaire button:hover {
         font-size: 0px;
     }
 
-    .four {
-        display:inline-table ;
+    form {
+        width:90vw;
+        height: auto;
+        padding-bottom: 10px;
     }
 
-    .four-left {
+    .gauche {
         width: 100%;
-        padding: 10% 0 10% 0;
+        flex: none;
     }
 
-    .four-right {
+    .droite {
+        margin-left: 0;
         width: 100%;
-        padding-bottom: 10%;
+        flex: none;
+    }
+
+    .pied-formulaire button {
+        margin-top: 55px;
     }
 }
 
 @media screen and (max-width: 404px) {
-    form .corps-formulaire .gauche {
-        margin-top: 30%;
+    form {
+        width: auto;
+        height: auto;
+    }
+    
+    .gauche {
+        margin-top: 35%;
         margin-left: 50%;
         transform: translate(-50%,-50%);
     }
 
-    form .corps-formulaire .droite {
-        margin-left: 50%;
-        transform: translate(-50%,-50%);
+    .droite {
+        margin-left: 0%;
+        transform: translate(0,-50%);
     }
 
-    form .corps-formulaire {
-        display: flex;
-        flex-wrap: wrap;
+    .corps-formulaire {
         margin-bottom: 0;
     }
     
-    form .corps-formulaire .groupe {
+    .groupe {
         margin-top: 0;
         
     }
 
-    form .corps-formulaire .gauche .groupe input {
+    .gauche .groupe input {
         margin-bottom: 5px;
     }
 
-    .four-right {
-        width: 100%;
-    }
-
-    .four-left {
-        width: 100%;
+    .pied-formulaire button {
+        margin-top: 15px;
     }
 }
 
