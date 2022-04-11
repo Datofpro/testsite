@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
-    -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: preserve 3d;
     /* font-family:'Times New Roman', Times, serif; */
 }
 
@@ -48,7 +48,6 @@ html {
     grid-template-rows: 70px 1fr 150px;
     grid-template-columns: 70px 1fr 70px;
     padding: 4vh 3vw;
-    z-index: 3;
 }
 
 nav {
@@ -166,7 +165,7 @@ nav {
     visibility: hidden;
     transform : translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    z-index: 4;
+
 }
 
 .event {
@@ -254,7 +253,6 @@ section {
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
-    z-index: 1;
 }
 
 /* ////////////////////////////////////////////DEUXIEME SECTION////////////////////////// */
@@ -264,7 +262,6 @@ section {
     justify-content: center;
     text-align: center;
     display: flex;
-    z-index: 1;
 }
 
 .carre {
@@ -391,7 +388,7 @@ form {
 
 form h1 {
     font-size: 40px;
-    
+
 }
 
 .corps-formulaire {
@@ -406,7 +403,7 @@ form h1 {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
 .gauche {
     flex: 2;
@@ -470,20 +467,20 @@ form h1 {
 /* ////////////////////////////////////////// FONCTIONS //////////////////////////////////////// */
 
 @media screen and (max-width: 900px) {
-    
+
     html {
         scroll-snap-type: none;
     }
 
     .insta {
         background: rgba(0, 0, 0, 0.75);
-        
+
     }
 
     .side {
         flex: 0;
     }
-    
+
     .image-gallery {
         flex: 10;
         /* padding-top: 2%; */
@@ -545,8 +542,8 @@ form h1 {
         margin-top: 5%;
         margin-bottom: 5%;
     }
-    
-    
+
+
     .insta-links {
         flex-flow: column;
     }
@@ -556,12 +553,12 @@ form h1 {
     .prese {
         width: auto;
     }
-    
+
     form {
         width: auto;
         height: auto;
     }
-    
+
     .gauche {
         margin-top: 35%;
         margin-left: 50%;
@@ -576,10 +573,10 @@ form h1 {
     .corps-formulaire {
         margin-bottom: 0;
     }
-    
+
     .groupe {
         margin-top: 0;
-        
+
     }
 
     .gauche .groupe input {
