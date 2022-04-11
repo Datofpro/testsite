@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
+    -webkit-transform-style: preserve-3d;
     /* font-family:'Times New Roman', Times, serif; */
 }
 
