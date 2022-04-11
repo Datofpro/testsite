@@ -166,6 +166,7 @@ nav {
     transform : translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: 4;
+    -webkit-transform-style: preserve-3d;
 }
 
 .event {
