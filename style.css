@@ -47,6 +47,7 @@ html {
     grid-template-rows: 70px 1fr 150px;
     grid-template-columns: 70px 1fr 70px;
     padding: 4vh 3vw;
+    z-index: 3;
 }
 
 nav {
@@ -164,7 +165,7 @@ nav {
     visibility: hidden;
     transform : translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
+    z-index: 4;
 }
 
 .event {
@@ -252,6 +253,7 @@ section {
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
+    z-index: 1;
 }
 
 /* ////////////////////////////////////////////DEUXIEME SECTION////////////////////////// */
@@ -261,6 +263,7 @@ section {
     justify-content: center;
     text-align: center;
     display: flex;
+    z-index: 1;
 }
 
 .carre {
