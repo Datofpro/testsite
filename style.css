@@ -115,14 +115,14 @@ nav {
     position: relative;
     height: 65px;
     width: 65px;
-    background-color: #fff;
     border-radius: 19px;
-    box-shadow: 0 1px 0 #bdbdbd,
-                0 2px 0 #fff,
-                0 3px 0 #bdbdbd,
-                0 4px 0 #fff,
-                0 5px 0 #bdbdbd,
-                0 0 0 1px #bdbdbd,
+    background-color: rgba(255, 255, 255, 0.935);
+    box-shadow: 0 1px 0 #bdbdbdef,
+                0 2px 0 rgba(255, 255, 255, 0.935),
+                0 3px 0 #bdbdbdef,
+                0 4px 0 rgba(255, 255, 255, 0.935),
+                0 5px 0 #bdbdbdef,
+                0 0 0 1px #bdbdbdef,
                 0 6px 5px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     margin-bottom: 15px;
@@ -138,13 +138,13 @@ nav {
 .calendar strong {
   position: absolute;
   padding: 6px 0;
-  background-color: red;
-  border-bottom: solid 3px black;
+  background-color: rgba(255, 0, 0, 0.935);
+  border-bottom: solid 3px rgba(0, 0, 0, 0.935);
 }
 
 .calendar span {
   padding-top: 17px;
-  color: black;
+  color: rgba(0, 0, 0, 0.935);
 }
 
 .calendar:hover {
