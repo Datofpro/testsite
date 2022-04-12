@@ -165,7 +165,7 @@ nav {
     visibility: hidden;
     transform : translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
+    -webkit-transform-style: preserve 3d;
 }
 
 .event {
