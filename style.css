@@ -103,6 +103,8 @@ nav {
 .nav2 .dropdown:hover > .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -webkit-transform-style: preserve 3d;
     visibility: visible;
 }
 
@@ -123,6 +125,7 @@ nav {
     overflow: hidden;
     margin-bottom: 15px;
     transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
 }
 
 .calendar * {
@@ -160,8 +163,9 @@ nav {
     opacity: 0;
     visibility: hidden;
     transform : translateY(-10px);
+    -webkit-transform: translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    -webkit-transform-style: preserve 3d;
+    -webkit-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .event {
