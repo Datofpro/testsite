@@ -100,7 +100,8 @@ nav {
     transform: scale(1.15);
 }
 
-.nav2 .dropdown:hover > .dropdown-menu {
+.nav2 .dropdown:hover > .dropdown-menu
+.nav2 .dropdown:active > .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -639,17 +640,6 @@ form h1 {
 @media screen and (max-height: 750px) {
     html {
         scroll-snap-type: none;
-    }
-}
-
-@media(hover: hover) and (pointer: fine) {
-    .nav2 .dropdown:hover > .dropdown-menu {
-        opacity: 1;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -webkit-transform-style: preserve 3d;
-        -webkit-transform: translateZ(0);
-        visibility: visible;
     }
 }
 
