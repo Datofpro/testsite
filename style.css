@@ -100,7 +100,7 @@ nav {
     transform: scale(1.15);
 }
 
-.nav2 .dropdown:hover > .dropdown-menu
+.nav2 .dropdown:hover > .dropdown-menu,
 .nav2 .dropdown:active > .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
