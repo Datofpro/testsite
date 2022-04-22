@@ -95,8 +95,8 @@ nav {
 .insta:hover {
     background: rgb(131,58,180);
     background: linear-gradient(-150deg, rgba(131, 58, 180, 1) 20%,
-                                        rgba(255, 71, 71, 0.85) 50%,
-                                        rgb(255, 182, 81) 80%);
+                                         rgba(255, 71, 71, 0.85) 50%,
+                                         rgb(255, 182, 81) 80%);
     transform: scale(1.15);
 }
 
@@ -114,46 +114,70 @@ nav {
     visibility: hidden;
 }
 
-.calendar {
-    display: block;
-    position: relative;
-    height: 65px;
-    width: 65px;
-    border-radius: 19px;
-    background-color: rgba(255, 255, 255, 0.935);
-    box-shadow: 0 1px 0 #bdbdbdef,
-                0 2px 0 rgba(255, 255, 255, 0.935),
-                0 3px 0 #bdbdbdef,
-                0 4px 0 rgba(255, 255, 255, 0.935),
-                0 5px 0 #bdbdbdef,
-                0 0 0 1px #bdbdbdef,
-                0 6px 5px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    margin-bottom: 15px;
+.disk {
+    background:#333;
+    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:1%;
+    border-top-right-radius:9px;
+    box-shadow:1px 1px 1px RGBA(0,0,0, 0.5),
+               -2px -2px 1px #222 inset;
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
 }
-
-.calendar * {
-    display: block;
-    width: 100%;
-    text-align: center;
+  
+.gap {
+    background:#222;
+    width:46px;
+    height:25px;
+    margin:auto;
+    border:1px solid #121212;
+    border-top:0;
+    border-right:0;
+    border-radius:0 0 3px 3px;
+    box-shadow:-1px -1px 3px #111 inset;
+}
+  
+.metal {
+    background:linear-gradient(to bottom, #AAA, #777);
+    width:32px;
+    margin-left:13px;
+    height:25px;
+    border-radius:0 0 3px 3px;
+    box-shadow:-1px -1px 1px RGBA(50,50,50, 0.25) inset;
 }
 
-.calendar strong {
-  position: absolute;
-  padding: 6px 0;
-  background-color: rgba(255, 0, 0, 0.935);
-  border-bottom: solid 3px rgba(0, 0, 0, 0.935);
+.metal:hover {
+    margin-left:0;
+    transition:all 0.4s linear;
 }
-
-.calendar span {
-  padding-top: 17px;
-  color: rgba(0, 0, 0, 0.935);
-}
-
-.calendar:hover {
+  
+.disk:hover {
     transform: scale(1.15);
+}
+  
+.hole {
+    background:#222;
+    width:7px;
+    height:18px;
+    margin-left:auto;
+    margin-right:5px;
+    position:relative;
+    top:3px;
+    border-radius:1px;
+    box-shadow:0 0 1px #212121;
+}
+  
+.label {
+    background:#CCC;
+    width:57px;
+    height:37px;
+    margin:7px auto 0 auto;
+    border:1px solid #333;
+    border-bottom:2px solid blue;
+    border-radius:3px 3px 0 0;
+    box-shadow:-1px -1px 6px #777 inset;
 }
 
 .dropdown-menu {
