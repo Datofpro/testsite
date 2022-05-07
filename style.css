@@ -290,17 +290,14 @@ section {
     display: flex;
     width: 175px;
     height: min-content;
-    background: white;
-    border: solid 10px black;
-    border-radius: 19px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
 .one img {
-    padding: 20px;
+    background: white;
+    border-radius: 53px;
     object-fit: cover;
     max-width: inherit;
     max-height: inherit;
@@ -644,11 +641,10 @@ form h1 {
 @media screen and (max-width: 404px) {
     .one div {
         width: 125px;
-        border: solid 7px black;
     }
 
     .one img {
-        padding: 15px;
+        border-radius: 38px;
     }
     
     .prese {
