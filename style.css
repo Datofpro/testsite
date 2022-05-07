@@ -86,7 +86,6 @@ nav {
 .insta {
     height: 70px;
     border-radius: 19px;
-    margin-right: 30px;
     background: rgba(0, 0, 0, 0.935);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
@@ -279,10 +278,34 @@ section {
 .one {
     height: 100vh;
     width: 100vw;
+    padding: 4vh;
     background: url('img/DSCF7647_DxO-4.jpg');
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
+    display: flex;
+}
+
+.one div {
+    display: flex;
+    width: 175px;
+    height: min-content;
+    background: white;
+    border: solid 10px black;
+    border-radius: 19px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.one img {
+    padding: 20px;
+    object-fit: cover;
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
 }
 
 /* ////////////////////////////////////////////DEUXIEME SECTION////////////////////////// */
@@ -292,15 +315,6 @@ section {
     justify-content: center;
     text-align: center;
     display: flex;
-}
-
-.carre {
-    width: 50%;
-    height: 10vh;
-    background: black;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    align-self: center;
 }
 
 .side {
@@ -628,6 +642,15 @@ form h1 {
 }
 
 @media screen and (max-width: 404px) {
+    .one div {
+        width: 125px;
+        border: solid 7px black;
+    }
+
+    .one img {
+        padding: 15px;
+    }
+    
     .prese {
         width: auto;
     }
