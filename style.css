@@ -94,7 +94,7 @@ nav {
 .insta:hover {
     background: rgb(131,58,180);
     background: linear-gradient(-150deg, rgba(131, 58, 180, 1) 20%,
-                                         rgba(255, 71, 71, 0.85) 50%,
+                                         rgb(255, 71, 71) 50%,
                                          rgb(255, 182, 81) 80%);
     transform: scale(1.15);
 }
@@ -204,10 +204,14 @@ nav {
     align-items: center;
 }
 
-.dates,
-.event img {
+.dates {
     position: absolute;
     height: 40px;
+}
+
+.event img {
+    position: absolute;
+    width: 40px;
 }
 
 .dates {
@@ -215,10 +219,7 @@ nav {
     font-size: 27px;
 }
 
-.event h1 {
-    margin-left: 50px;
-}
-
+.event h1,
 .event li {
     margin-left: 50px;
 }
